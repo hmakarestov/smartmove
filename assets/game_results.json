@@ -1,0 +1,51 @@
+[
+  {
+    "gameId": "towergame",
+    "playerId": "247115",
+    "result": "120",
+    "gameSessionId": "20210531-153021-B",
+    "location": "Breda"
+  },
+  {
+    "gameId": "towergame",
+    "playerId": "113465",
+    "result": "140",
+    "gameSessionId": "20210528-142817-B",
+    "location": "Breda"
+  },
+  {
+    "gameId": "pacman",
+    "playerId": "764333",
+    "result": "160",
+    "gameSessionId": "20210601-181638-B",
+    "location": "Helmond"
+  },
+  {
+    "gameId": "pacman",
+    "playerId": "113465",
+    "result": "180",
+    "gameSessionId": "20210608-180000-B",
+    "location": "Helmond"
+  },
+  {
+    "gameId": "pacman",
+    "playerId": "D968B104-92A8-4EEE-B77C-7482C247D30A",
+    "result": "170",
+    "gameSessionId": "20210608-180000-B",
+    "location": "Helmond"
+  },
+  {
+    "gameId": "pacman",
+    "playerId": "8BE4282F-8978-40C4-A393-909E0BB4C832",
+    "result": "101",
+    "gameSessionId": "20210608-180000-B",
+    "location": "Helmond"
+  },
+  {
+    "gameId": "pacman",
+    "playerId": "764346",
+    "result": "194",
+    "gameSessionId": "20210608-180000-B",
+    "location": "Helmond"
+  }
+]

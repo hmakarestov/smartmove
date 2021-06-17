@@ -1,0 +1,32 @@
+[
+  {
+    "id": "towergame",
+    "name": "Tower Game",
+    "playerAmount": "1-2 players",
+    "timeDuration": 5,
+    "category": "Arcade",
+    "url": "https://www.towergame.app/",
+    "iconName": "blocks",
+    "gameGuide": [
+      "Tower Game: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum lorem quis nulla elementum, quis laoreet nisl faucibus. Cras imperdiet id eros et pharetra. Maecenas sollicitudin, erat sed blandit congue, nunc velit varius libero, a aliquet odio leo eget elit. Curabitur posuere tincidunt felis vel auctor. Donec a aliquam sapien. Donec pulvinar sollicitudin rhoncus. Suspendisse potenti. Praesent dignissim, tortor sit amet mattis faucibus, lectus mauris vulputate dui, ac facilisis metus nunc eu dui.",
+      "Donec semper pharetra metus vitae elementum. Duis a blandit ligula. Maecenas dapibus orci enim, et posuere libero eleifend sed. Pellentesque commodo, ex ut volutpat iaculis, lorem ante commodo risus, et hendrerit odio augue id orci. Praesent finibus lacus ac tellus euismod porta. Maecenas vel erat sit amet mauris lacinia faucibus. Quisque faucibus mauris porta enim iaculis finibus. Ut finibus eros vitae tincidunt consectetur. In congue neque et sem vulputate, sit amet imperdiet libero rhoncus. Ut eu metus lorem. Cras tincidunt purus eu dui tristique consectetur.",
+      "In mollis quis dui ut tempus. Maecenas vehicula pretium purus vel lacinia. Vivamus volutpat turpis ex, finibus ultricies dui laoreet quis. Morbi tempus interdum neque, in convallis nisi venenatis ac. Nunc ut vestibulum nisl. Proin ac nisl eleifend, dapibus lacus sit amet, tempor dui. Proin condimentum dui sed nisi tincidunt, non posuere ex lobortis. Donec cursus eleifend dapibus. Aliquam quis feugiat eros. Phasellus elit ipsum, hendrerit sed magna nec, viverra facilisis sapien. Donec ante arcu, consequat id convallis quis, laoreet nec orci.",
+      "Nam ullamcorper aliquam finibus. Suspendisse pellentesque, nisi ut tincidunt vulputate, felis erat pretium nisl, sit amet bibendum nibh massa eget diam. Mauris nec mi tempus, tempor ex et, rutrum quam. Sed imperdiet in risus pretium cursus. Etiam tortor tellus, porta et dapibus a, gravida quis quam. Nullam mollis porttitor sodales. Donec lacinia varius quam ac blandit. Donec molestie auctor elit ac scelerisque. In hac habitasse platea dictumst. Aliquam blandit mi in augue sollicitudin venenatis. Suspendisse et posuere ligula. Aenean porta tempus enim, et porta dui ullamcorper ac. Fusce quis efficitur urna, in euismod justo. Phasellus lacinia dignissim lorem. Phasellus non lorem a nunc iaculis ultrices sit amet vitae dui. Integer dapibus mauris dolor, sed placerat dui condimentum nec.",
+      "Proin tristique magna sodales, tempor nibh in, ultricies erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc non pretium sem, accumsan pulvinar lorem. Quisque sit amet nisi nisl. Nullam ac molestie mauris. Nam facilisis eros nisl, ut gravida lacus sollicitudin at. Vestibulum vel euismod magna, sit amet euismod erat. Duis fermentum felis nisl, ut eleifend est semper ac."
+    ]
+  },
+  {
+    "id": "pacman",
+    "name": "Pacman",
+    "playerAmount": "1 player",
+    "timeDuration": 4,
+    "category": "Arcade",
+    "url": "https://bobrov.dev/pacman-pwa/index.html",
+    "iconName": "pacman",
+    "gameGuide": [
+      "Pacman: Donec semper pharetra metus vitae elementum. Duis a blandit ligula. Maecenas dapibus orci enim, et posuere libero eleifend sed. Pellentesque commodo, ex ut volutpat iaculis, lorem ante commodo risus, et hendrerit odio augue id orci. Praesent finibus lacus ac tellus euismod porta. Maecenas vel erat sit amet mauris lacinia faucibus. Quisque faucibus mauris porta enim iaculis finibus. Ut finibus eros vitae tincidunt consectetur. In congue neque et sem vulputate, sit amet imperdiet libero rhoncus. Ut eu metus lorem. Cras tincidunt purus eu dui tristique consectetur.",
+      "In mollis quis dui ut tempus. Maecenas vehicula pretium purus vel lacinia. Vivamus volutpat turpis ex, finibus ultricies dui laoreet quis. Morbi tempus interdum neque, in convallis nisi venenatis ac. Nunc ut vestibulum nisl. Proin ac nisl eleifend, dapibus lacus sit amet, tempor dui. Proin condimentum dui sed nisi tincidunt, non posuere ex lobortis. Donec cursus eleifend dapibus. Aliquam quis feugiat eros. Phasellus elit ipsum, hendrerit sed magna nec, viverra facilisis sapien. Donec ante arcu, consequat id convallis quis, laoreet nec orci.",
+      "Nam ullamcorper aliquam finibus. Suspendisse pellentesque, nisi ut tincidunt vulputate, felis erat pretium nisl, sit amet bibendum nibh massa eget diam. Mauris nec mi tempus, tempor ex et, rutrum quam. Sed imperdiet in risus pretium cursus. Etiam tortor tellus, porta et dapibus a, gravida quis quam. Nullam mollis porttitor sodales. Donec lacinia varius quam ac blandit. Donec molestie auctor elit ac scelerisque. In hac habitasse platea dictumst. Aliquam blandit mi in augue sollicitudin venenatis. Suspendisse et posuere ligula. Aenean porta tempus enim, et porta dui ullamcorper ac. Fusce quis efficitur urna, in euismod justo. Phasellus lacinia dignissim lorem. Phasellus non lorem a nunc iaculis ultrices sit amet vitae dui. Integer dapibus mauris dolor, sed placerat dui condimentum nec."
+    ]
+  }
+]
