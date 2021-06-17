@@ -1,7 +1,7 @@
-import 'package:flutter_beacon_example/datamodels/game.dart';
-import 'package:flutter_beacon_example/datamodels/player.dart';
-import 'package:flutter_beacon_example/datamodels/result.dart';
 import 'package:flutter_test/flutter_test.dart';
+import '../lib/datamodels/game.dart';
+import '../lib/datamodels/player.dart';
+import '../lib/datamodels/result.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -25,19 +25,19 @@ void main() {
   //   expect(categoryFinder, findsOneWidget);
   //   expect(playerAmountFinder, findsOneWidget);
   // });
-  test('gameResults_parseFromJSON', () async{
+  test('gameResults_parseFromJSON', () async {
     final List<Result> results = await fetchResults();
 
     expect(results[0].gameId, 'towergame');
     expect(results[2].gameId, 'pacman');
   });
-  test('games_parseFromJSON', () async{
+  test('games_parseFromJSON', () async {
     final List<Game> games = await fetchGames();
 
     expect(games[0].id, 'towergame');
     expect(games[1].id, 'pacman');
   });
-  test('players_parseFromJSON', () async{
+  test('players_parseFromJSON', () async {
     final List<Player> players = await fetchPlayers();
 
     expect(players[0].name, 'Hristo');

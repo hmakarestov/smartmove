@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_beacon_example/components/game_details_app_bar.dart';
-import 'package:flutter_beacon_example/play_game.dart';
+import 'components/game_details_app_bar.dart';
 import 'datamodels/game.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'constraints.dart';
+import 'play_game.dart';
 
 class GameDetails extends StatefulWidget {
   final Game game;

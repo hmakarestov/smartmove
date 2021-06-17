@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_beacon_example/utils/icons_helper.dart';
 import 'components/ranking_main_app_bar.dart';
 import 'constraints.dart';
 import 'datamodels/game.dart';
 import 'ranking_detailed.dart';
+import 'utils/icons_helper.dart';
 
 class Ranking extends StatefulWidget {
   final List<Game> games;

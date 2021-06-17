@@ -1,9 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_beacon_example/controller/requirement_state_controller.dart';
-import 'package:flutter_beacon_example/home_page.dart';
 import 'package:get/get.dart';
 import 'package:device_preview/device_preview.dart';
+
+import 'controller/requirement_state_controller.dart';
+import 'home_page.dart';
 
 void main() async {
   runApp(

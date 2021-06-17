@@ -4,11 +4,11 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_beacon/flutter_beacon.dart';
-import 'package:flutter_beacon_example/controller/requirement_state_controller.dart';
 import 'package:get/get.dart';
 
 import 'beacon_scanning.dart';
 import 'components/players_app_bar.dart';
+import 'controller/requirement_state_controller.dart';
 
 class Players extends StatefulWidget {
   @override

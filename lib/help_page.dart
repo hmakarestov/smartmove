@@ -1,9 +1,9 @@
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_beacon_example/utils/icons_helper.dart';
 import 'constraints.dart';
 import 'components/help_app_bar.dart';
 import 'datamodels/help_tab.dart';
+import 'utils/icons_helper.dart';
 
 class Help extends StatelessWidget {
   @override

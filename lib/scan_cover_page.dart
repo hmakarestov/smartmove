@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_beacon_example/players.dart';
 import 'constraints.dart';
 import 'available_games.dart';
+import 'players.dart';
 
 class ScanCoverPage extends StatelessWidget {
   @override

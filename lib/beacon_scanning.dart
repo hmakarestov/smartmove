@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter_beacon/flutter_beacon.dart';
-import 'package:flutter_beacon_example/controller/requirement_state_controller.dart';
 import 'package:get/get.dart';
 
 import 'available_games.dart';
 import 'constraints.dart';
+import 'controller/requirement_state_controller.dart';
 import 'datamodels/player.dart';
 
 class TabScanning extends StatefulWidget {

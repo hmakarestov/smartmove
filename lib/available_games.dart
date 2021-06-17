@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_beacon_example/game_details.dart';
-import 'package:flutter_beacon_example/utils/icons_helper.dart';
 import 'components/available_games_app_bar.dart';
 import 'constraints.dart';
 import 'datamodels/game.dart';
+import 'game_details.dart';
+import 'utils/icons_helper.dart';
 
 class AvailableGames extends StatefulWidget {
   final bool hasBeaconScanned;

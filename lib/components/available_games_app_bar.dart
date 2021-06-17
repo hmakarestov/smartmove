@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_beacon_example/datamodels/game.dart';
+import '../datamodels/game.dart';
 import '../help_page.dart';
 import '../constraints.dart';
 import '../ranking_main.dart';
