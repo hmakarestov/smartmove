@@ -17,12 +17,12 @@ class Players extends StatefulWidget {
 
 class _PlayersState extends State<Players> with WidgetsBindingObserver {
   final controller = Get.find<RequirementStateController>();
-  StreamSubscription<BluetoothState> _streamBluetooth;
+  StreamSubscription<BluetoothState>? _streamBluetooth;
   int currentIndex = 0;
 
   @override
   void initState() {
-    WidgetsBinding.instance.addObserver(this);
+    WidgetsBinding.instance!.addObserver(this);
 
     super.initState();
 
@@ -74,8 +74,8 @@ class _PlayersState extends State<Players> with WidgetsBindingObserver {
   void didChangeAppLifecycleState(AppLifecycleState state) async {
     print('AppLifecycleState = $state');
     if (state == AppLifecycleState.resumed) {
-      if (_streamBluetooth != null && _streamBluetooth.isPaused) {
-        _streamBluetooth.resume();
+      if (_streamBluetooth != null && _streamBluetooth!.isPaused) {
+        _streamBluetooth!.resume();
       }
       await checkAllRequirements();
     } else if (state == AppLifecycleState.paused) {

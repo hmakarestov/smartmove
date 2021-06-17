@@ -8,7 +8,7 @@ import 'utils/icons_helper.dart';
 class AvailableGames extends StatefulWidget {
   final bool hasBeaconScanned;
 
-  AvailableGames({@required this.hasBeaconScanned});
+  AvailableGames({required this.hasBeaconScanned});
 
   @override
   _AvailableGamesState createState() => _AvailableGamesState();
@@ -92,7 +92,7 @@ class _AvailableGamesState extends State<AvailableGames> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    game.name,
+                                    game.name!,
                                     style: TextStyle(
                                       fontSize: 34.0 * 2,
                                       fontWeight: FontWeight.bold,
@@ -114,7 +114,7 @@ class _AvailableGamesState extends State<AvailableGames> {
                                         width: 30.0,
                                       ),
                                       Text(
-                                        game.category,
+                                        game.category!,
                                         style: TextStyle(
                                           fontSize: 24.0 * 2,
                                           fontWeight: FontWeight.normal,
@@ -135,7 +135,7 @@ class _AvailableGamesState extends State<AvailableGames> {
                                         width: 30.0,
                                       ),
                                       Text(
-                                        game.playerAmount,
+                                        game.playerAmount!,
                                         style: TextStyle(
                                           fontSize: 24.0 * 2,
                                           fontWeight: FontWeight.normal,

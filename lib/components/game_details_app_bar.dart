@@ -7,10 +7,10 @@ import '../ranking_detailed.dart';
 class GameDetailsAppBar extends StatefulWidget with PreferredSizeWidget {
   @override
   final Size preferredSize;
-  final Game game;
+  final Game? game;
 
   GameDetailsAppBar({
-    Key key,
+    Key? key,
     this.preferredSize = const Size.fromHeight(450.0),
     this.game,
   }) : super(key: key);
@@ -81,7 +81,7 @@ class _GameDetailsAppBarState extends State<GameDetailsAppBar> {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => DetailedRanking(
-                            gameId: widget.game.id, gameName: widget.game.name),
+                            gameId: widget.game!.id, gameName: widget.game!.name),
                       ),
                     );
                   },
@@ -109,7 +109,7 @@ class _GameDetailsAppBarState extends State<GameDetailsAppBar> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    widget.game.name,
+                    widget.game!.name!,
                     style: TextStyle(
                       fontSize: 120,
                       fontWeight: FontWeight.bold,
@@ -141,7 +141,7 @@ class _GameDetailsAppBarState extends State<GameDetailsAppBar> {
                         width: 20.0,
                       ),
                       Text(
-                        widget.game.category,
+                        widget.game!.category!,
                         style: TextStyle(
                           fontSize: 24.0 * 2,
                           fontWeight: FontWeight.normal,
@@ -163,7 +163,7 @@ class _GameDetailsAppBarState extends State<GameDetailsAppBar> {
                         width: 20.0,
                       ),
                       Text(
-                        widget.game.playerAmount,
+                        widget.game!.playerAmount!,
                         style: TextStyle(
                           fontSize: 24.0 * 2,
                           fontWeight: FontWeight.normal,
@@ -185,7 +185,7 @@ class _GameDetailsAppBarState extends State<GameDetailsAppBar> {
                         width: 20.0,
                       ),
                       Text(
-                        widget.game.timeDuration.toString() + " minutes",
+                        widget.game!.timeDuration.toString() + " minutes",
                         style: TextStyle(
                           fontSize: 24.0 * 2,
                           fontWeight: FontWeight.normal,

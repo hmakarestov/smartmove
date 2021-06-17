@@ -7,7 +7,7 @@ class RankingMainAppBar extends StatefulWidget with PreferredSizeWidget {
   final Size preferredSize;
 
   RankingMainAppBar({
-    Key key,
+    Key? key,
     this.preferredSize = const Size.fromHeight(450.0),
   }) : super(key: key);
 

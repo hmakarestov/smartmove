@@ -6,7 +6,7 @@ class HelpAppBar extends StatefulWidget with PreferredSizeWidget {
   final Size preferredSize;
 
   HelpAppBar({
-    Key key,
+    Key? key,
     this.preferredSize = const Size.fromHeight(450.0),
   }) : super(key: key);
 

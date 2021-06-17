@@ -5,12 +5,12 @@ import '../help_page.dart';
 class RankingAppBar extends StatefulWidget with PreferredSizeWidget {
   @override
   final Size preferredSize;
-  final TabController tabController;
+  final TabController? tabController;
 
-  final String title;
+  final String? title;
 
   RankingAppBar({
-    Key key,
+    Key? key,
     this.preferredSize = const Size.fromHeight(450.0),
     this.tabController,
     this.title,
@@ -96,7 +96,7 @@ class _RankingAppBarState extends State<RankingAppBar> {
                 children: [
                   Text(
                     //widget.title,
-                    widget.title,
+                    widget.title!,
                     style: TextStyle(
                       fontSize: 120,
                       fontWeight: FontWeight.bold,

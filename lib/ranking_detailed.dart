@@ -1,3 +1,4 @@
+import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/material.dart';
 import 'components/ranking_app_bar.dart';
 import 'constraints.dart';
@@ -5,10 +6,10 @@ import 'datamodels/player.dart';
 import 'datamodels/result.dart';
 
 class DetailedRanking extends StatefulWidget {
-  final String gameId;
-  final String gameName;
+  final String? gameId;
+  final String? gameName;
 
-  const DetailedRanking({Key key, @required this.gameId, this.gameName})
+  const DetailedRanking({Key? key, required this.gameId, this.gameName})
       : super(key: key);
 
   @override
@@ -21,7 +22,7 @@ class _DetailedRankingState extends State<DetailedRanking>
   List<Player> players = [];
   List<Result> selectedAllTimeResults = [];
   List<Result> selectedCurrentResults = [];
-  TabController tabController;
+  TabController? tabController;
 
   @override
   void initState() {
@@ -38,8 +39,8 @@ class _DetailedRankingState extends State<DetailedRanking>
     });
     loadAllTimeResults(widget.gameId);
     loadCurrentResults(widget.gameId, "20210608-180000-B");
-    selectedAllTimeResults.sort((a, b) => a.result.compareTo(b.result));
-    selectedCurrentResults.sort((a, b) => a.result.compareTo(b.result));
+    selectedAllTimeResults.sort((a, b) => a.result!.compareTo(b.result!));
+    selectedCurrentResults.sort((a, b) => a.result!.compareTo(b.result!));
   }
 
   void loadPlayers() async {
@@ -49,7 +50,7 @@ class _DetailedRankingState extends State<DetailedRanking>
     });
   }
 
-  void loadAllTimeResults(String id) {
+  void loadAllTimeResults(String? id) {
     results.forEach((element) {
       if (element.gameId == id) {
         selectedAllTimeResults.add(element);
@@ -57,7 +58,7 @@ class _DetailedRankingState extends State<DetailedRanking>
     });
   }
 
-  void loadCurrentResults(String gId, String sId) {
+  void loadCurrentResults(String? gId, String sId) {
     results.forEach((element) {
       if (element.gameId == gId && element.gameSessionId == sId) {
         selectedCurrentResults.add(element);
@@ -65,9 +66,8 @@ class _DetailedRankingState extends State<DetailedRanking>
     });
   }
 
-  String findName(String playerId) {
-    Player player = players.firstWhere((element) => element.id == playerId,
-        orElse: () => null);
+  String? findName(String? playerId) {
+    Player? player = players.firstWhereOrNull((element) => element.id == playerId);
     if (player != null) return player.name;
     return playerId;
   }
@@ -150,7 +150,7 @@ class _DetailedRankingState extends State<DetailedRanking>
                                 Container(
                                   width: 700,
                                   child: Text(
-                                    findName(result.playerId),
+                                    findName(result.playerId)!,
                                     style: TextStyle(
                                       fontSize: 34.0 * 2,
                                       fontWeight: FontWeight.bold,
@@ -162,7 +162,7 @@ class _DetailedRankingState extends State<DetailedRanking>
                                   width: 100,
                                 ),
                                 Text(
-                                  result.result,
+                                  result.result!,
                                   style: TextStyle(
                                     fontSize: 34.0 * 2,
                                     fontWeight: FontWeight.normal,
@@ -260,7 +260,7 @@ class _DetailedRankingState extends State<DetailedRanking>
                           Container(
                             width: 700,
                             child: Text(
-                              findName(result.playerId),
+                              findName(result.playerId)!,
                               style: TextStyle(
                                 fontSize: 34.0 * 2,
                                 fontWeight: FontWeight.bold,
@@ -272,7 +272,7 @@ class _DetailedRankingState extends State<DetailedRanking>
                             width: 100,
                           ),
                           Text(
-                            result.result,
+                            result.result!,
                             style: TextStyle(
                               fontSize: 34.0 * 2,
                               fontWeight: FontWeight.normal,

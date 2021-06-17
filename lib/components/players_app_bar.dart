@@ -7,7 +7,7 @@ class PlayersAppBar extends StatefulWidget with PreferredSizeWidget {
   final Size preferredSize;
 
   PlayersAppBar({
-    Key key,
+    Key? key,
     this.preferredSize = const Size.fromHeight(450.0),
   }) : super(key: key);
 

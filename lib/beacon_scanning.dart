@@ -15,7 +15,7 @@ class TabScanning extends StatefulWidget {
 }
 
 class _TabScanningState extends State<TabScanning> {
-  StreamSubscription<RangingResult> _streamRanging;
+  StreamSubscription<RangingResult>? _streamRanging;
   final _regionBeacons = <Region, List<Beacon>>{};
   final _beacons = <Beacon>[];
   final controller = Get.find<RequirementStateController>();
@@ -64,13 +64,13 @@ class _TabScanningState extends State<TabScanning> {
     }
     final regions = <Region>[
       Region(
-        identifier: null,
+        identifier: "",
       ),
     ];
 
     if (_streamRanging != null) {
-      if (_streamRanging.isPaused) {
-        _streamRanging.resume();
+      if (_streamRanging!.isPaused) {
+        _streamRanging!.resume();
         return;
       }
     }
@@ -149,7 +149,7 @@ class _TabScanningState extends State<TabScanning> {
                       Beacon beacon = _beacons[index];
                       print('Found beacon: ${beacon.proximityUUID}');
 
-                      String playerName = "Player " + (index + 1).toString();
+                      String? playerName = "Player " + (index + 1).toString();
 
                       for (int i = 0; i < players.length; i++) {
                         if (players[i].id == beacon.proximityUUID)
@@ -193,7 +193,7 @@ class _TabScanningState extends State<TabScanning> {
                                     ),
                                   ),
                                   Text(
-                                    playerName,
+                                    playerName!,
                                     style: TextStyle(
                                       fontSize: 34.0 * 2,
                                       fontWeight: FontWeight.bold,

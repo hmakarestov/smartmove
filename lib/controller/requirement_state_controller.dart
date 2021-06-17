@@ -46,15 +46,15 @@ class RequirementStateController extends GetxController {
     _pauseScanning.value = true;
   }
 
-  Stream<bool> get startBroadcastStream {
+  Stream<bool?> get startBroadcastStream {
     return _startBroadcasting.stream;
   }
 
-  Stream<bool> get startStream {
+  Stream<bool?> get startStream {
     return _startScanning.stream;
   }
 
-  Stream<bool> get pauseStream {
+  Stream<bool?> get pauseStream {
     return _pauseScanning.stream;
   }
 }

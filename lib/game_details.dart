@@ -9,7 +9,7 @@ import 'play_game.dart';
 class GameDetails extends StatefulWidget {
   final Game game;
 
-  const GameDetails({Key key, @required this.game}) : super(key: key);
+  const GameDetails({Key? key, required this.game}) : super(key: key);
 
   @override
   _GameDetailsState createState() => _GameDetailsState();
@@ -122,7 +122,7 @@ class _GameDetailsState extends State<GameDetails> {
     }
 
     if (tabsCreated == false) {
-      addTabs(widget.game.gameGuide);
+      addTabs(widget.game.gameGuide!);
     }
     return Scaffold(
       appBar: GameDetailsAppBar(game: widget.game),

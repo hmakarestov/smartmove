@@ -6,16 +6,16 @@ import 'ranking_detailed.dart';
 import 'utils/icons_helper.dart';
 
 class Ranking extends StatefulWidget {
-  final List<Game> games;
+  final List<Game>? games;
 
-  const Ranking({Key key, @required this.games}) : super(key: key);
+  const Ranking({Key? key, required this.games}) : super(key: key);
 
   @override
   _RankingState createState() => _RankingState();
 }
 
 class _RankingState extends State<Ranking> with SingleTickerProviderStateMixin {
-  TabController tabController;
+  TabController? tabController;
 
   @override
   void initState() {
@@ -36,9 +36,9 @@ class _RankingState extends State<Ranking> with SingleTickerProviderStateMixin {
         child: ListView.separated(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
-          itemCount: widget.games.length,
+          itemCount: widget.games!.length,
           itemBuilder: (context, index) {
-            Game game = widget.games[index];
+            Game game = widget.games![index];
             return GestureDetector(
               onTap: () {
                 Navigator.of(context).push(
@@ -81,7 +81,7 @@ class _RankingState extends State<Ranking> with SingleTickerProviderStateMixin {
                           ),
                         ),
                         Text(
-                          game.name,
+                          game.name!,
                           style: TextStyle(
                             fontSize: 34.0 * 2,
                             fontWeight: FontWeight.bold,

@@ -7,11 +7,11 @@ import '../ranking_main.dart';
 class AvailableGamesAppBar extends StatefulWidget with PreferredSizeWidget {
   @override
   final Size preferredSize;
-  final bool hasBeaconScanned;
-  final List<Game> games;
+  final bool? hasBeaconScanned;
+  final List<Game>? games;
 
   AvailableGamesAppBar({
-    Key key,
+    Key? key,
     this.preferredSize = const Size.fromHeight(450.0),
     this.hasBeaconScanned,
     this.games,
@@ -70,7 +70,7 @@ class _AvailableGamesAppBarState extends State<AvailableGamesAppBar> {
                   iconSize: 80.0,
                   color: Colors.white,
                   onPressed: () {
-                    if (widget.hasBeaconScanned) {
+                    if (widget.hasBeaconScanned!) {
                       Navigator.pop(context);
                       Navigator.pop(context);
                       Navigator.pop(context);

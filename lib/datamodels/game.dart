@@ -4,14 +4,14 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class Game {
-  final String id;
-  final String name;
-  final String playerAmount;
-  final int timeDuration;
-  final String category;
-  final String url;
-  final String iconName;
-  final List<String> gameGuide;
+  final String? id;
+  final String? name;
+  final String? playerAmount;
+  final int? timeDuration;
+  final String? category;
+  final String? url;
+  final String? iconName;
+  final List<String>? gameGuide;
 
   Game({
     this.id,
@@ -29,7 +29,7 @@ class Game {
       id: json['id'],
       name: json['name'],
       playerAmount: json['playerAmount'],
-      timeDuration: json['timeDuration'] as int,
+      timeDuration: json['timeDuration'] as int?,
       category: json['category'],
       url: json['url'],
       iconName: json['iconName'],

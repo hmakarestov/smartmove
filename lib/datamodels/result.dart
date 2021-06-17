@@ -4,11 +4,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class Result {
-  final String gameId;
-  final String playerId;
-  final String result;
-  final String gameSessionId;
-  final String location;
+  final String? gameId;
+  final String? playerId;
+  final String? result;
+  final String? gameSessionId;
+  final String? location;
 
   Result(
       {this.gameId,

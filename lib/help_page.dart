@@ -66,7 +66,7 @@ class Help extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              tabs[index].title,
+                              tabs[index].title!,
                               style: TextStyle(
                                 fontSize: 34.0 * 2,
                                 fontWeight: FontWeight.bold,
@@ -82,7 +82,7 @@ class Help extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 50, vertical: 10),
                     child: Text(
-                      tabs[index].text,
+                      tabs[index].text!,
                       softWrap: true,
                       style: TextStyle(
                         fontSize: 24.0 * 2,
@@ -90,7 +90,7 @@ class Help extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                  ),
+                  ), collapsed: Center(),
                 ),
               ),
             );

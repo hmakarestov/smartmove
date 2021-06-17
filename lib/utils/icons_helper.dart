@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class IconsHelper {
-  static IconData getIconByName(String name) {
+  static IconData getIconByName(String? name) {
     switch (name) {
       case "blocks":
         return Icons.apartment;
