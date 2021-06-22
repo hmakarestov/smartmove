@@ -38,7 +38,7 @@ class _DetailedRankingState extends State<DetailedRanking>
       results = r;
     });
     loadAllTimeResults(widget.gameId);
-    loadCurrentResults(widget.gameId, "20210608-180000-B");
+    //loadCurrentResults(widget.gameId, "20210608-180000-B");
     selectedAllTimeResults.sort((a, b) => a.result!.compareTo(b.result!));
     selectedCurrentResults.sort((a, b) => a.result!.compareTo(b.result!));
   }
